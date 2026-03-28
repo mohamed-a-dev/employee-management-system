@@ -43,8 +43,8 @@ https://employee-management-system-gem8.vercel.app/
 
 employee-management-system/
 │
-├── client/   # React + Vite
-├── server/   # Express API
+├── front/   # React + Vite
+├── back/   # Express API
 └── README.md
 
 ---
