@@ -1,6 +1,6 @@
 # 🧑‍💼 Employee Management System
 
-A full-stack web application to manage employees, tasks, and roles داخل الشركة.
+A full-stack web application to manage employees, tasks, and roles.
 
 ---
 
