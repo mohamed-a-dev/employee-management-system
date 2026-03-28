@@ -6,7 +6,7 @@ A full-stack web application to manage employees, tasks, and roles داخل ال
 
 ## 🚀 Live Demo
 
-wwwwwwwwwww
+https://employee-management-system-gem8.vercel.app/
 
 ---
 
@@ -53,17 +53,17 @@ employee-management-system/
 
 ### 1. Clone the repo
 
-git clone https://github.com/your-username/employee-management-system.git
+https://github.com/EngineerMohamed2016/employee-management-system
 
 ### 2. Frontend Setup
 
-cd client
+cd front
 npm install
 npm run dev
 
 ### 3. Backend Setup
 
-cd server
+cd back
 npm install
 npm run dev
 
@@ -86,7 +86,7 @@ VITE_API_URL=http://localhost:5000
 ## 📦 Deployment
 
 * Frontend deployed on Vercel
-* Backend deployed on Render
+* Backend deployed on Vercel
 * Database hosted on MongoDB Atlas
 
 ---
@@ -103,5 +103,5 @@ VITE_API_URL=http://localhost:5000
 
 ## 📬 Contact
 
-* GitHub: https://github.com/your-username
-* Email: [your-email@example.com](mailto:your-email@example.com)
+* GitHub: https://github.com/EngineerMohamed2016
+* Email: engineermohamed2016@gmail.com
