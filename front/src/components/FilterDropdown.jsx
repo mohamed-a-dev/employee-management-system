@@ -31,7 +31,7 @@ const FilterDropdown = ({ showFilterDropdown, setFilter, filterAction }) => {
                     keys.forEach(key => {
                         delete newObj[key];
                     });
-                    return { ...newObj, [e.target.value]: filterValue };
+                    return { ...newObj, [e.target.value]: '' };
                 });
             }
             else
@@ -51,6 +51,7 @@ const FilterDropdown = ({ showFilterDropdown, setFilter, filterAction }) => {
                     <select name="fields" onChange={(e) => {
                         setSelectedField(e.target.value);
                         handleSelectChange(e);
+                        setFilterValue('');
                     }} className='pr-20 py-1 outline-none capitalize text-sm font-semibold border-b dark:text-white'>
                         {
 
