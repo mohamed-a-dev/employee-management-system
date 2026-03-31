@@ -57,7 +57,7 @@ export const EmployeeProvider = ({ children }) => {
     }
 
     const getEmployees = async () => {
-        const api = import.meta.env.VITE_DOMAIN + 'employees/';
+        const api = import.meta.env.VITE_API_URL + 'employees/';
 
         try {
             setLoad(true);
@@ -82,7 +82,7 @@ export const EmployeeProvider = ({ children }) => {
     };
 
     const createEmployee = async () => {
-        const api = import.meta.env.VITE_DOMAIN + 'employees/';
+        const api = import.meta.env.VITE_API_URL + 'employees/';
         try {
 
             const res = await fetch(api, {
@@ -111,7 +111,7 @@ export const EmployeeProvider = ({ children }) => {
 
 
     const editEmployee = async (employeeId) => {
-        const api = import.meta.env.VITE_DOMAIN + 'employees/' + employeeId;
+        const api = import.meta.env.VITE_API_URL + 'employees/' + employeeId;
 
         try {
 
@@ -145,7 +145,7 @@ export const EmployeeProvider = ({ children }) => {
 
 
     const deleteEmployee = async (employeeId) => {
-        const api = import.meta.env.VITE_DOMAIN + 'employees/' + employeeId;
+        const api = import.meta.env.VITE_API_URL + 'employees/' + employeeId;
 
         try {
 
@@ -176,7 +176,7 @@ export const EmployeeProvider = ({ children }) => {
 
 
     const searchEmployees = async (search) => {
-        const api = import.meta.env.VITE_DOMAIN + 'employees/search?search=' + search;
+        const api = import.meta.env.VITE_API_URL + 'employees/search?search=' + search;
         try {
 
             const res = await fetch(api, {
@@ -198,7 +198,7 @@ export const EmployeeProvider = ({ children }) => {
 
     const filterEmployees = async () => {
         const query = new URLSearchParams(filter).toString();
-        const api = import.meta.env.VITE_DOMAIN + `employees/filter?${query}`;
+        const api = import.meta.env.VITE_API_URL + `employees/filter?${query}`;
         try {
             const res = await fetch(api, {
                 headers: {

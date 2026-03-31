@@ -25,7 +25,7 @@ export default function Settings() {
     setLoading(true);
 
     try {
-      const api = import.meta.env.VITE_DOMAIN + 'employees/change-password';
+      const api = import.meta.env.VITE_API_URL + 'employees/change-password';
       const res = await fetch(api, {
         method: "PATCH",
         headers: {

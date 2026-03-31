@@ -40,9 +40,9 @@ const Employee = () => {
     }
 
     const getEmployeeDetails = async () => {
-        const employeeApi = import.meta.env.VITE_DOMAIN + 'employees/' + employeeId;
-        const employeeTasksApi = import.meta.env.VITE_DOMAIN + 'tasks/employee/' + employeeId;
-        const rolesApi = import.meta.env.VITE_DOMAIN + 'roles';
+        const employeeApi = import.meta.env.VITE_API_URL + 'employees/' + employeeId;
+        const employeeTasksApi = import.meta.env.VITE_API_URL + 'tasks/employee/' + employeeId;
+        const rolesApi = import.meta.env.VITE_API_URL + 'roles';
 
 
         try {

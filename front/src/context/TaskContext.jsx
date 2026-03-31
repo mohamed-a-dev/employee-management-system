@@ -46,7 +46,7 @@ export const TaskProvider = ({ children }) => {
     const toggleFilterButton = () => setShowFilterDropdown(!showFilterDropdown);
 
     const getTasks = async () => {
-        const api = import.meta.env.VITE_DOMAIN + 'tasks/';
+        const api = import.meta.env.VITE_API_URL + 'tasks/';
         try {
             setLoad(true);
             const res = await fetch(api, {
@@ -70,7 +70,7 @@ export const TaskProvider = ({ children }) => {
     }
 
     const createTask = async () => {
-        const api = import.meta.env.VITE_DOMAIN + 'tasks/';
+        const api = import.meta.env.VITE_API_URL + 'tasks/';
         try {
 
             const res = await fetch(api, {
@@ -100,7 +100,7 @@ export const TaskProvider = ({ children }) => {
 
     const editTask = async () => {
         const taskId = form._id;
-        const api = import.meta.env.VITE_DOMAIN + 'tasks/' + taskId;
+        const api = import.meta.env.VITE_API_URL + 'tasks/' + taskId;
 
         try {
 
@@ -135,7 +135,7 @@ export const TaskProvider = ({ children }) => {
 
 
     const deleteTask = async (taskId) => {
-        const api = import.meta.env.VITE_DOMAIN + 'tasks/' + taskId;
+        const api = import.meta.env.VITE_API_URL + 'tasks/' + taskId;
         try {
 
             const res = await fetch(api, {
@@ -172,7 +172,7 @@ export const TaskProvider = ({ children }) => {
 
 
     const searchTasks = async (search) => {
-        const api = import.meta.env.VITE_DOMAIN + 'tasks/search?search=' + search;
+        const api = import.meta.env.VITE_API_URL + 'tasks/search?search=' + search;
         try {
 
             const res = await fetch(api, {
@@ -197,7 +197,7 @@ export const TaskProvider = ({ children }) => {
         console.log(filter);
         
         const query = new URLSearchParams(filter).toString();
-        const api = import.meta.env.VITE_DOMAIN + `tasks/filter?${query}`;
+        const api = import.meta.env.VITE_API_URL + `tasks/filter?${query}`;
 
         try {
             const res = await fetch(api, {

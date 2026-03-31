@@ -12,7 +12,7 @@ export const DashboardProvider = ({ children }) => {
     const getToken = () => localStorage.getItem('employees-dashboard-token') || '';
 
     const getEmployeesStats = async () => {
-        const api = import.meta.env.VITE_DOMAIN + 'dashboard/employees';
+        const api = import.meta.env.VITE_API_URL + 'dashboard/employees';
         try {
             const res = await fetch(api, {
                 headers: {
@@ -33,7 +33,7 @@ export const DashboardProvider = ({ children }) => {
     }
 
     const getTasksStats = async () => {
-        const api = import.meta.env.VITE_DOMAIN + 'dashboard/tasks';
+        const api = import.meta.env.VITE_API_URL + 'dashboard/tasks';
         try {
             const res = await fetch(api, {
                 headers: {
@@ -55,7 +55,7 @@ export const DashboardProvider = ({ children }) => {
 
 
     const getTopEmployees = async () => {
-        const api = import.meta.env.VITE_DOMAIN + 'dashboard/top-employees';
+        const api = import.meta.env.VITE_API_URL + 'dashboard/top-employees';
         try {
             const res = await fetch(api, {
                 headers: {

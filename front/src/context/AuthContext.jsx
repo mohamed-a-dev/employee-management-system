@@ -18,7 +18,7 @@ export const AuthProvider = ({ children }) => {
     }
 
     const verifyAuth = async () => {
-        const api = import.meta.env.VITE_DOMAIN + 'auth/verify-auth';
+        const api = import.meta.env.VITE_API_URL + 'auth/verify-auth';
         setLoading(true);
         try {
             const res = await fetch(api, {

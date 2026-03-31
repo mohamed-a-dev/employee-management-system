@@ -13,7 +13,7 @@ const Task = () => {
   const token = localStorage.getItem('employees-dashboard-token') || '';
 
   const getTask = async () => {
-    const api = import.meta.env.VITE_DOMAIN + 'tasks/' + taskId;
+    const api = import.meta.env.VITE_API_URL + 'tasks/' + taskId;
 
     try {
       setLoad(true);

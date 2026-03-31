@@ -54,7 +54,7 @@ export const RoleProvider = ({ children }) => {
     };
 
     const getRoles = async () => {
-        const api = import.meta.env.VITE_DOMAIN + 'roles';
+        const api = import.meta.env.VITE_API_URL + 'roles';
         try {
             setLoad(true);
             const res = await fetch(api, {
@@ -79,7 +79,7 @@ export const RoleProvider = ({ children }) => {
     }
 
     const createRole = async (newRole) => {
-        const api = import.meta.env.VITE_DOMAIN + 'roles';
+        const api = import.meta.env.VITE_API_URL + 'roles';
         try {
             const res = await fetch(api, {
                 method: 'POST',
@@ -105,7 +105,7 @@ export const RoleProvider = ({ children }) => {
 
 
     const deleteRole = async (roleId) => {
-        const api = import.meta.env.VITE_DOMAIN + 'roles/' + roleId;
+        const api = import.meta.env.VITE_API_URL + 'roles/' + roleId;
         try {
 
             const res = await fetch(api, {
@@ -134,7 +134,7 @@ export const RoleProvider = ({ children }) => {
     }
 
     const editRole = async () => {
-        const api = import.meta.env.VITE_DOMAIN + 'roles/' + roleID;
+        const api = import.meta.env.VITE_API_URL + 'roles/' + roleID;
 
         try {
 
