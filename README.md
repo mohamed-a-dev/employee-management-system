@@ -12,19 +12,19 @@ https://employee-management-system-xyz.vercel.app/login
 
 ## 🛠️ Tech Stack
 
-### Frontend
+### 🎨 Frontend
 
-* React (Vite)
-* Tailwind CSS
+* ⚛️ React (Vite)
+* 🎨 Tailwind CSS
 
-### Backend
+### 🔧 Backend
 
-* Node.js
-* Express.js
+* 🟢 Node.js
+* 🚀 Express.js
 
-### Database
+### 🗄️ Database
 
-* MongoDB
+* 🍃 MongoDB
 
 ---
 
@@ -35,73 +35,85 @@ https://employee-management-system-xyz.vercel.app/login
 * 📋 Task Management System
 * 📊 Dashboard (statistics & charts)
 * 🔍 Filtering & Searching
-* 🌙 Responsive UI
+* 🌙 Fully responsive UI
 
 ---
 
 ## 📁 Project Structure
 
+```id="zv7kq2"
 employee-management-system/
 │
 ├── front/   # React + Vite
-├── back/   # Express API
+├── back/    # Express API
 └── README.md
+```
 
 ---
 
 ## ⚙️ Installation & Setup
 
-### 1. Clone the repo
+### 📥 Clone the repo
 
-https://github.com/EngineerMohamed2016/employee-management-system
+```id="n2k8xz"
+git clone https://github.com/EngineerMohamed2016/employee-management-system
+```
 
-### 2. Frontend Setup
+### 💻 Frontend Setup
 
+```id="d7r3qp"
 cd front
 npm install
 npm run dev
+```
 
-### 3. Backend Setup
+### 🖥️ Backend Setup
 
+```id="x4mt1v"
 cd back
 npm install
 npm run dev
+```
 
 ---
 
 ## 🔑 Environment Variables
 
-### Backend (.env)
+### 🔧 Backend (.env)
 
+```id="h8c6ls"
 PORT=5000
-MONGO_URI=your_mongodb_uri
+DB_URI=your_mongodb_uri
 JWT_SECRET=your_secret
+```
 
-### Frontend (.env)
+### 🎨 Frontend (.env)
 
+```id="k3p9dw"
 VITE_API_URL=http://localhost:5000
+```
 
 ---
 
-## 📦 Deployment
+## 🚀 Deployment
 
-* Frontend deployed on Vercel
-* Backend deployed on Vercel
-* Database hosted on MongoDB Atlas
+* ▲ Frontend: Vercel
+* ▲ Backend: Vercel
+* ☁️ Database: MongoDB Atlas
 
 ---
 
 ## 🧠 What I Learned
 
-* Building full-stack applications
-* REST API design
-* Authentication & role-based access
-* State management in React
-* Deploying apps to production
+* 🚀 Building full-stack applications
+* 🔧 REST API design
+* 🔐 Authentication & role-based access
+* ⚛️ State management in React
+* 📦 Deploying apps to production
 
 ---
 
 ## 📬 Contact
 
-* GitHub: https://github.com/EngineerMohamed2016
-* Email: engineermohamed2016@gmail.com
+* 💻 GitHub: https://github.com/EngineerMohamed2016
+* 📧 Email: [engineermohamed2016@gmail.com](mailto:engineermohamed2016@gmail.com)
