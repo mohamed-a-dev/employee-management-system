@@ -165,6 +165,9 @@ export const RoleProvider = ({ children }) => {
         }
     }
 
+    useEffect(()=>{
+        getRoles();
+    },[])
 
 
     return (
