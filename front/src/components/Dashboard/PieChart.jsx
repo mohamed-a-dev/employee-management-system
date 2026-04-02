@@ -5,10 +5,10 @@ export default function TasksStatusPieChart() {
     const { tasksStats } = useDashboard();
     const { tasksCount, completedTasksCount, PendingTasksCount, inProgressTasksCount } = tasksStats;
 
-    const data = [
-        { name: "Pending", value: PendingTasksCount, fill: "#facc15" },
-        { name: "In Progress", value: inProgressTasksCount, fill: "#3b82f6" },
-        { name: "Completed", value: completedTasksCount, fill: "#22c55e" },
+     const data = [
+        { name: "Pending", value: PendingTasksCount, fill: "#AD250A" },
+        { name: "In Progress", value: inProgressTasksCount, fill: "#0560F5" },
+        { name: "Completed", value: completedTasksCount, fill: "#007075" },
     ];
 
     return (
