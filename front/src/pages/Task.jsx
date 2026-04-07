@@ -8,7 +8,7 @@ import Loading from '../components/Loading';
 
 const Task = () => {
   const { taskId } = useParams();
-  const { task, setTask } = useTask();
+  const { task, setTask } = useTask({});
   const [load,setLoad] = useState(true);
   const token = localStorage.getItem('employees-dashboard-token') || '';
 
@@ -39,9 +39,6 @@ const Task = () => {
   useEffect(() => {
     getTask();
   }, []);
-
-  if (Object.keys(task) === 0)
-    return null;
 
   if (load) return <Loading/>
 
